@@ -46,6 +46,6 @@ for song in songs_list:
 playlist = sp.user_playlist_create(user=user_id, name=f"{selected_date} Billboard 100", public=False)
 # print(playlist)
 
-print(song_uris[0:99])
+#print(song_uris[0:99])
 
 sp.playlist_add_items(playlist_id=playlist["id"], items=song_uris[0:99])
